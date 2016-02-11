@@ -1,6 +1,5 @@
 import sys
 
-from PySide.QtCore import *
 from PySide.QtGui import *
 
 from src import View
@@ -21,6 +20,52 @@ class Controller(QMainWindow):
 
         self.Out = View.Ui_MainWindow()
         self.Out.setupUi(self)
+
+        self.Out.actionNew.activated.connect(self.new)
+        self.Out.actionCopy_CS.activated.connect(self.copycs)
+        self.Out.actionOpen.activated.connect(self.open)
+        self.Out.actionSave.activated.connect(self.save)
+        self.Out.actionSave_as.activated.connect(self.saveas)
+
+    """
+        New
+    """
+    def new(self):
+
+        # Hier kommt der Methodeninhalt für New!
+        print("New")
+
+    """
+        Copy CS
+    """
+    def copycs(self):
+
+        # Hier kommt der Methodeninhalt für Copy CS!
+        print("Copy CS")
+
+    """
+        Open
+    """
+    def open(self):
+
+        # Hier kommt der Methodeninhalt für Open!
+        print("Open")
+
+    """
+        Save
+    """
+    def save(self):
+
+        # Hier kommt der Methodeninhalt für Save!
+        print("Save")
+
+    """
+        Save As
+    """
+    def saveas(self):
+
+        # Hier kommt der Methodeninhalt für Save as!
+        print("Save as")
 
 """
     Starten des Programms
