@@ -10,7 +10,7 @@ __date__ = 20160211
 __version__ = 1.0
 
 
-class Controller(QWidget):
+class Controller(QMainWindow):
 
     """
         Anzeigen der GUI
@@ -21,12 +21,6 @@ class Controller(QWidget):
 
         self.Out = View.Ui_MainWindow()
         self.Out.setupUi(self)
-
-    """
-        Beendet das Programm sauber
-    """
-    def kill(self):
-        QCoreApplication.instance().quit()
 
 """
     Starten des Programms
