@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'GUIStruktur.ui'
 #
-# Created: Thu Feb 11 12:31:19 2016
+# Created: Thu Feb 11 13:17:01 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -66,10 +66,18 @@ class Ui_MainWindow(object):
         self.menuWindows.setTitle(QtGui.QApplication.translate("MainWindow", "Windows", None, QtGui.QApplication.UnicodeUTF8))
         self.menuHelp.setTitle(QtGui.QApplication.translate("MainWindow", "Help", None, QtGui.QApplication.UnicodeUTF8))
         self.actionOpen.setText(QtGui.QApplication.translate("MainWindow", "Open", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionOpen.setStatusTip(QtGui.QApplication.translate("MainWindow", "Open file ...", None, QtGui.QApplication.UnicodeUTF8))
         self.actionSave.setText(QtGui.QApplication.translate("MainWindow", "Save", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionSave.setToolTip(QtGui.QApplication.translate("MainWindow", "Save file ...", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionSave.setStatusTip(QtGui.QApplication.translate("MainWindow", "Save file ...", None, QtGui.QApplication.UnicodeUTF8))
         self.actionSave_as.setText(QtGui.QApplication.translate("MainWindow", "Save as", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionSave_as.setToolTip(QtGui.QApplication.translate("MainWindow", "Save file as ...", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionSave_as.setStatusTip(QtGui.QApplication.translate("MainWindow", "Save file as ...", None, QtGui.QApplication.UnicodeUTF8))
         self.actionNew.setText(QtGui.QApplication.translate("MainWindow", "New", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionNew.setStatusTip(QtGui.QApplication.translate("MainWindow", "Create new file ...", None, QtGui.QApplication.UnicodeUTF8))
         self.actionCopy_CS.setText(QtGui.QApplication.translate("MainWindow", "Copy CS", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionCopy_CS.setStatusTip(QtGui.QApplication.translate("MainWindow", "Copy CS ...", None, QtGui.QApplication.UnicodeUTF8))
         self.actionClose.setText(QtGui.QApplication.translate("MainWindow", "Close", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionClose.setStatusTip(QtGui.QApplication.translate("MainWindow", "Close application ...", None, QtGui.QApplication.UnicodeUTF8))
         self.actionClose.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+Q", None, QtGui.QApplication.UnicodeUTF8))
 
